@@ -1,8 +1,26 @@
+WORK IN PROGRESS
+
 # affinity_attention
 
+Publications:
 
 
-###Behavioral paradigm and datasets: 
+
+## Citing our work
+
+Please cite our  work by using the following BibTeX entry.
+<!-- 
+``` bibtex
+@Misc{xFormers2022,
+  author =       {Benjamin Lefaudeux and Francisco Massa and Diana Liskovich and Wenhan Xiong and Vittorio Caggiano and Sean Naren and Min Xu and Jieru Hu and Marta Tintore and Susan Zhang and Patrick Labatut and Daniel Haziza},
+  title =        {xFormers: A modular and hackable Transformer modelling library},
+  howpublished = {\url{https://github.com/facebookresearch/xformers}},
+  year =         {2022}
+}
+``` -->
+
+
+## Behavioral paradigm and datasets: 
 
 <img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/human_behavior/exp_paradigm.png" width = 350>
 <img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/human_behavior/sample_trials.png" width = 300>
