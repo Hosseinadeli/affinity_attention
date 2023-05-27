@@ -3,7 +3,7 @@
 
 
 Behavioral paradigm: 
-<img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/blob/main/figures/human_behavior/exp_paradigm.png" width = 700>
+<img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/human_behavior/exp_paradigm.png" width = 700>
 
 <!-- From Cluttered MultiMNIST OCRA-7glimpse
 <img src="https://raw.githubusercontent.com/Recurrent-Attention-Models/OCRA/main/figures/clutter-7steps.png" width = 700> -->
