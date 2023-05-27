@@ -22,8 +22,7 @@ Please cite our  work by using the following BibTeX entry.
 
 ## Behavioral paradigm and datasets: 
 
-<img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/human_behavior/exp_paradigm.png" width = 350>
-<img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/human_behavior/sample_trials.png" width = 300>
+<img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/human_behavior/exp_paradigm.png" width = 350> <img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/human_behavior/sample_trials.png" width = 300>
 
 This google drive includes all the experimental images:
 display_images : This folder contains the images used in the experiment. All selected from COCO 2017 validation set. 
