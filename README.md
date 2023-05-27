@@ -85,7 +85,13 @@ preprocess behavioral data.ipynb : Use this notebook to preprocess the behaviora
 
 human behavior analyses.ipynb : This notebook takes in the preprocessed files and analyzes the RTs and percentiles. It also calculates the subject-subject agreements and some sample trials with average RTs from subjects. 
 
+## Affinity spread model
 
+You can run the model using the code below. 
+
+```bash
+python main.py --arch "dinov2_vitb14" --patch_size 14 --which_features "q"  --coco2017_path "./data/coco" --calc_object_centric 1 --calc_spread 1 --aff_tau 0.8
+```
 
 model results analyses.ipynb : 
 
@@ -95,8 +101,9 @@ Affinity_spread_demo_standalone_colab.ipynb : This is a standalone simplified ve
 experimental methods.gdoc : provides the method details of the experiment 
 
 
-```bash
-!python main.py --arch "dinov2_vitb14" --patch_size 14 --which_features "q"  --coco2017_path "../../../Colab Notebooks/capsnet-master/data/coco" --calc_object_centric 0 --calc_spread 1 --aff_tau 0.75```
+
+
+
 !python main.py --arch "dinov2_vitb14" --patch_size 14 --which_features "q" --calc_object_centric 0 --calc_spread 1 --aff_tau 0.85
 
 
