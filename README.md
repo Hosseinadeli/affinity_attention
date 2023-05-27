@@ -2,18 +2,16 @@
 
 
 
-Behavioral paradigm: 
+###Behavioral paradigm and datasets: 
+
 <img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/human_behavior/exp_paradigm.png" width = 350>
 <img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/human_behavior/sample_trials.png" width = 300>
 
-<!-- From Cluttered MultiMNIST OCRA-7glimpse
-<img src="https://raw.githubusercontent.com/Recurrent-Attention-Models/OCRA/main/figures/clutter-7steps.png" width = 300> -->
-
-
+This google drive includes all the experimental images:
 display_images : This folder contains the images used in the experiment. All selected from COCO 2017 validation set. 
-
 display_images_with dots : This folder contains the images used in the experiment with the four versions of dot placements. 
 
+Behavioral dataset:
 datasets -> datasets_grouping -> test_data_groupiong.xls : This excel file contains the info for all the 1020 experimental trials. Each row specified one trial with these info:
 
 ['img_id',
@@ -29,7 +27,6 @@ datasets -> datasets_grouping -> test_data_groupiong.xls : This excel file conta
 
 datasets -> datasets_grouping -> train_data_groupiong.xls : We applied our dot placement algorithm to the COCO 2017 training set in order to select many more trials. If you intend to train your model on the same-different task use this file. The images are completely separate from the images used in the experiment. The file contains the same info with the same format as the test_data_grouping.xls. 
 
-
 datasets -> loaddata_g.py : This file can read in the excel files for testing and training and give you a pytorch dataloader with the below function:  
 
 fetch_dataloader(args, batch_size, train='train', shuffle=True)
@@ -39,9 +36,6 @@ args.batch_size – set as 1 because images have different sizes
 args.resize – whether to resize the images - only in use when running detr 
 args.coco2017_path  – path to coco, have to be downloaded separately 
 args.dataset_grouping_dir  - this is the folder where the xls files are
-
-Also a function is included to plot the dots over images. 
-
 
 utils for display images and dot locations.ipynb : Some useful stuff to play around the display images and plot them. 
 
@@ -74,6 +68,8 @@ preprocess behavioral data.ipynb : Use this notebook to preprocess the behaviora
 
 human behavior analyses.ipynb : This notebook takes in the preprocessed files and analyzes the RTs and percentiles. It also calculates the subject-subject agreements and some sample trials with average RTs from subjects. 
 
+
+
 model results analyses.ipynb : 
 
 Affinity_spread_demo_standalone_colab.ipynb : This is a standalone simplified version of the code to run in Colab. 
@@ -85,3 +81,11 @@ experimental methods.gdoc : provides the method details of the experiment
 ```bash
 !python main.py --arch "dinov2_vitb14" --patch_size 14 --which_features "q"  --coco2017_path "../../../Colab Notebooks/capsnet-master/data/coco" --calc_object_centric 0 --calc_spread 1 --aff_tau 0.75```
 !python main.py --arch "dinov2_vitb14" --patch_size 14 --which_features "q" --calc_object_centric 0 --calc_spread 1 --aff_tau 0.85
+
+
+## Credits
+
+The following repositories were used, either in close to original form or as an inspiration:
+
+1) [XifengGuo/CapsNet-Pytorch](https://github.com/XifengGuo/CapsNet-Pytorch) <br/>
+2) [kamenbliznashki/generative_models](https://github.com/kamenbliznashki/generative_models/blob/master/draw.py) <br/>
