@@ -73,5 +73,6 @@ Affinity_spread_demo_standalone_colab.ipynb : This is a standalone simplified ve
 experimental methods.gdoc : provides the method details of the experiment 
 
 
-
+```bash
+!python main.py --arch "dinov2_vitb14" --patch_size 14 --which_features "q"  --coco2017_path "../../../Colab Notebooks/capsnet-master/data/coco" --calc_object_centric 0 --calc_spread 1 --aff_tau 0.75```
 !python main.py --arch "dinov2_vitb14" --patch_size 14 --which_features "q" --calc_object_centric 0 --calc_spread 1 --aff_tau 0.85
