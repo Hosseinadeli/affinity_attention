@@ -95,7 +95,11 @@ You can run the model using the code below.
 python main.py --arch "dinov2_vitb14" --patch_size 14 --which_features "q"  --coco2017_path "./data/coco" --calc_object_centric 1 --calc_spread 1 --aff_tau 0.8
 ```
 
-model results analyses.ipynb : 
+
+## Analyzing model results 
+
+<img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/results/ROC_curve_sorted_sim.png" width = 300><img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/results/model_human_rt_comp_sim.png" width = 300>
+
 
 Affinity_spread_demo_standalone_colab.ipynb : This is a standalone simplified version of the code to run in Colab. 
 
@@ -103,15 +107,14 @@ Affinity_spread_demo_standalone_colab.ipynb : This is a standalone simplified ve
 experimental methods.gdoc : provides the method details of the experiment 
 
 
-
-
-
-!python main.py --arch "dinov2_vitb14" --patch_size 14 --which_features "q" --calc_object_centric 0 --calc_spread 1 --aff_tau 0.85
-
-
 ## Credits
 
 The following repositories were used, either in close to original form or as an inspiration:
 
 1) [facebookresearch/dinov2](https://github.com/facebookresearch/dinov2) <br/>
-2) [kamenbliznashki/generative_models](https://github.com/kamenbliznashki/generative_models/blob/master/draw.py) <br/>
+2) [facebookresearch/dino](https://github.com/facebookresearch/dino) <br/>
+3) [facebookresearch/mae](https://github.com/facebookresearch/mae) <br/>
+4) [YangtaoWANG95/TokenCut](https://github.com/YangtaoWANG95/TokenCut) <br/>
+5) [valeoai/LOST](https://github.com/valeoai/LOST) <br/>
+6) [huggingface/pytorch-image-models](https://github.com/huggingface/pytorch-image-models) <br/>
+
