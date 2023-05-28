@@ -113,5 +113,5 @@ experimental methods.gdoc : provides the method details of the experiment
 
 The following repositories were used, either in close to original form or as an inspiration:
 
-1) [XifengGuo/CapsNet-Pytorch](https://github.com/XifengGuo/CapsNet-Pytorch) <br/>
+1) [facebookresearch/dinov2](https://github.com/facebookresearch/dinov2) <br/>
 2) [kamenbliznashki/generative_models](https://github.com/kamenbliznashki/generative_models/blob/master/draw.py) <br/>
