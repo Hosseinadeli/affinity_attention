@@ -98,7 +98,7 @@ python main.py --arch "dinov2_vitb14" --patch_size 14 --which_features "q"  --co
 
 ## Analyzing model results 
 
-<img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/results/ROC_curve_sorted_sim.png" width = 300><img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/results/model_human_rt_comp_sim.png" width = 300>
+<img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/results/ROC_curve_sorted_sim.png" width = 400><img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/results/model_human_rt_comp_sim.png" width = 300>
 
 
 Affinity_spread_demo_standalone_colab.ipynb : This is a standalone simplified version of the code to run in Colab. 
