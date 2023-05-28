@@ -95,6 +95,16 @@ You can run the model using the code below.
 python main.py --arch "dinov2_vitb14" --patch_size 14 --which_features "q"  --coco2017_path "./data/coco" --calc_object_centric 1 --calc_spread 1 --aff_tau 0.8
 ```
 
+is very simple to implement and experiment with, and we provide a
+showing how to do spread attention .
+affinity_attention_spread_Transformer_demo
+[standalone Colab Notebook with features from a self-supervised transformer](https://colab.research.google.com/drive/1maUewiNxNXvm_OxEj_GMzi4fiHboNXyQ?usp=sharing)
+
+[standalone Colab Notebook with features from a CNN]
+affinity_attention_spread_CNN_demo
+https://colab.research.google.com/drive/16Ba_7ZPb2ptPdkBvSyzXNN3p2IftpJny?usp=sharing
+
+
 
 ## Analyzing model results 
 
@@ -114,7 +124,8 @@ The following repositories were used, either in close to original form or as an 
 1) [facebookresearch/dinov2](https://github.com/facebookresearch/dinov2) <br/>
 2) [facebookresearch/dino](https://github.com/facebookresearch/dino) <br/>
 3) [facebookresearch/mae](https://github.com/facebookresearch/mae) <br/>
-4) [YangtaoWANG95/TokenCut](https://github.com/YangtaoWANG95/TokenCut) <br/>
-5) [valeoai/LOST](https://github.com/valeoai/LOST) <br/>
-6) [huggingface/pytorch-image-models](https://github.com/huggingface/pytorch-image-models) <br/>
+4) [facebookresearch/detr](https://github.com/facebookresearch/detr) <br/>
+5) [YangtaoWANG95/TokenCut](https://github.com/YangtaoWANG95/TokenCut) <br/>
+6) [valeoai/LOST](https://github.com/valeoai/LOST) <br/>
+7) [huggingface/pytorch-image-models](https://github.com/huggingface/pytorch-image-models) <br/>
 
