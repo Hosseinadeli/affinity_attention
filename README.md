@@ -26,11 +26,13 @@ Please cite our  work by using the following BibTeX entry.
 
 <img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/human_behavior/exp_paradigm.png" width = 350>                                     <img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/human_behavior/sample_trials.png" width = 300>
 
-This google drive includes all the experimental images:
-display_images : This folder contains the images used in the experiment. All selected from COCO 2017 validation set. 
-display_images_with dots : This folder contains the images used in the experiment with the four versions of dot placements. 
+Refer to the paper for the details of the behavrioal paradigm. 
 
-Behavioral dataset:
+This [google drive folder]() includes all the experimental images:
+**display_images** : This folder contains the images used in the experiment. All selected from COCO 2017 validation set. 
+**display_images_with dots** : This folder contains the images used in the experiment with the four versions of dot placements. 
+
+**Behavioral dataset**:
 datasets -> datasets_grouping -> test_data_groupiong.xls : This excel file contains the info for all the 1020 experimental trials. Each row specified one trial with these info:
 
 ['img_id',
@@ -48,7 +50,7 @@ datasets -> datasets_grouping -> test_data_groupiong.xls : This excel file conta
 
 **datasets -> loaddata_g.py** : This file can read in the excel files for testing and training and give you a pytorch dataloader with the below function:  
 
-fetch_dataloader(args, batch_size, train='train', shuffle=True)
+> fetch_dataloader(args, batch_size, train='train', shuffle=True)
 
 The args needs to have these components: 
 args.batch_size – set as 1 because images have different sizes 
@@ -56,7 +58,7 @@ args.resize – whether to resize the images - only in use when running detr
 args.coco2017_path  – path to coco, have to be downloaded separately 
 args.dataset_grouping_dir  - this is the folder where the xls files are
 
-utils for display images and dot locations.ipynb : Some useful stuff to play around the display images and plot them. 
+**utils for display images and dot locations.ipynb** : Some useful stuff to play around the display images and plot them. 
 
 **datasets -> datasets_grouping -> Human_grouping_data.xls** : This is the main file containing raw behavioral data. We have 72 subjects in total. 
 
@@ -89,13 +91,13 @@ utils for display images and dot locations.ipynb : Some useful stuff to play aro
 
 ## Affinity spread model
 
-
-
 You can run the model using the code below. 
 
 ```bash
 python main.py --arch "dinov2_vitb14" --patch_size 14 --which_features "q"  --coco2017_path "./data/coco" --calc_object_centric 1 --calc_spread 1 --aff_tau 0.8
 ```
+
+
 
 is very simple to implement and experiment with, and we provide a
 showing how to do spread attention .
@@ -106,17 +108,11 @@ affinity_attention_spread_Transformer_demo
 affinity_attention_spread_CNN_demo
 https://colab.research.google.com/drive/16Ba_7ZPb2ptPdkBvSyzXNN3p2IftpJny?usp=sharing
 
-
-
-## Analyzing model results 
-
-<img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/results/ROC_curve_sorted_sim.png" width = 375><img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/results/model_human_rt_comp_sim.png" width = 300>
-
-
 Affinity_spread_demo_standalone_colab.ipynb : This is a standalone simplified version of the code to run in Colab. 
 
+## Evaluation 
 
-experimental methods.gdoc : provides the method details of the experiment 
+<img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/results/ROC_curve_sorted_sim.png" width = 375><img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/results/model_human_rt_comp_sim.png" width = 300>
 
 
 ## Credits
