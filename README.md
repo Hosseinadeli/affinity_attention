@@ -50,7 +50,9 @@ datasets -> datasets_grouping -> test_data_groupiong.xls : This excel file conta
 
 **datasets -> loaddata_g.py** : This file can read in the excel files for testing and training and give you a pytorch dataloader with the below function:  
 
-> fetch_dataloader(args, batch_size, train='train', shuffle=True)
+```bash
+fetch_dataloader(args, batch_size, train='train', shuffle=True)
+```
 
 The args needs to have these components: 
 args.batch_size – set as 1 because images have different sizes 
@@ -115,6 +117,29 @@ Affinity_spread_demo_standalone_colab.ipynb : This is a standalone simplified ve
 <img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/results/ROC_curve_sorted_sim.png" width = 375><img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/results/model_human_rt_comp_sim.png" width = 300>
 
 
+
+
+
+<!-- ### Repo map
+
+```bash
+├── ops                         # Functional operators
+    └ ...
+├── components                  # Parts zoo, any of which can be used directly
+│   ├── attention
+│   │    └ ...                  # all the supported attentions
+│   ├── feedforward             #
+│   │    └ ...                  # all the supported feedforwards
+│   ├── positional_embedding    #
+│   │    └ ...                  # all the supported positional embeddings
+│   ├── activations.py          #
+│   └── multi_head_dispatch.py  # (optional) multihead wrap
+|
+├── benchmarks
+│     └ ...                     # A lot of benchmarks that you can use to test some parts
+└── triton
+      └ ...                     # (optional) all the triton parts, requires triton + CUDA gpu
+``` -->
 ## Credits
 
 The following repositories were used, either in close to original form or as an inspiration:
