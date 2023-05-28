@@ -1,6 +1,8 @@
 WORK IN PROGRESS
 
-# affinity_attention
+# Affinity Attention
+
+<img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/sample_model_outputs/70158.png" width = 750>
 
 Publications:
 
@@ -56,7 +58,7 @@ args.dataset_grouping_dir  - this is the folder where the xls files are
 
 utils for display images and dot locations.ipynb : Some useful stuff to play around the display images and plot them. 
 
-*datasets -> datasets_grouping -> Human_grouping_data.xls* : This is the main file containing raw behavioral data. We have 72 subjects in total. 
+**datasets -> datasets_grouping -> Human_grouping_data.xls** : This is the main file containing raw behavioral data. We have 72 subjects in total. 
 
 ['RECORDING_SESSION_LABEL',
  'Trial_Index_',
@@ -87,7 +89,7 @@ utils for display images and dot locations.ipynb : Some useful stuff to play aro
 
 ## Affinity spread model
 
-<img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/sample_model_outputs/70158.png" width = 750>
+
 
 You can run the model using the code below. 
 
