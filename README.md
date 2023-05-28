@@ -87,6 +87,8 @@ human behavior analyses.ipynb : This notebook takes in the preprocessed files an
 
 ## Affinity spread model
 
+<img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/sample_model_outputs/70158.png" width = 750>
+
 You can run the model using the code below. 
 
 ```bash
