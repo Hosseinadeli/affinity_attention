@@ -42,9 +42,9 @@ datasets -> datasets_grouping -> test_data_groupiong.xls : This excel file conta
  'distance',
  'Img_shape']
 
-datasets -> datasets_grouping -> train_data_groupiong.xls : We applied our dot placement algorithm to the COCO 2017 training set in order to select many more trials. If you intend to train your model on the same-different task use this file. The images are completely separate from the images used in the experiment. The file contains the same info with the same format as the test_data_grouping.xls. 
+**datasets -> datasets_grouping -> train_data_groupiong.xls** : We applied our dot placement algorithm to the COCO 2017 training set in order to select many more trials. If you intend to train your model on the same-different task use this file. The images are completely separate from the images used in the experiment. The file contains the same info with the same format as the test_data_grouping.xls. 
 
-datasets -> loaddata_g.py : This file can read in the excel files for testing and training and give you a pytorch dataloader with the below function:  
+**datasets -> loaddata_g.py** : This file can read in the excel files for testing and training and give you a pytorch dataloader with the below function:  
 
 fetch_dataloader(args, batch_size, train='train', shuffle=True)
 
@@ -56,7 +56,7 @@ args.dataset_grouping_dir  - this is the folder where the xls files are
 
 utils for display images and dot locations.ipynb : Some useful stuff to play around the display images and plot them. 
 
-datasets -> datasets_grouping -> Human_grouping_data.xls : This is the main file containing raw behavioral data. We have 72 subjects in total. 
+*datasets -> datasets_grouping -> Human_grouping_data.xls* : This is the main file containing raw behavioral data. We have 72 subjects in total. 
 
 ['RECORDING_SESSION_LABEL',
  'Trial_Index_',
@@ -81,9 +81,9 @@ datasets -> datasets_grouping -> Human_grouping_data.xls : This is the main file
  'REACTION_TIME',
  'RT_EVENT_BUTTON_ID']
 
-preprocess behavioral data.ipynb : Use this notebook to preprocess the behavioral data. I have already saved the preprocessed files (test_data_grouping_with_all_beh.xls, test_data_grouping_with_mean_beh.xls, df_beh_c.xls) in the datasets -> datasets_grouping folder so you don’t really have to run this file, unless you want to change something. 
+*preprocess behavioral data.ipynb* : Use this notebook to preprocess the behavioral data. I have already saved the preprocessed files (test_data_grouping_with_all_beh.xls, test_data_grouping_with_mean_beh.xls, df_beh_c.xls) in the datasets -> datasets_grouping folder so you don’t really have to run this file, unless you want to change something. 
 
-human behavior analyses.ipynb : This notebook takes in the preprocessed files and analyzes the RTs and percentiles. It also calculates the subject-subject agreements and some sample trials with average RTs from subjects. 
+*human behavior analyses.ipynb* : This notebook takes in the preprocessed files and analyzes the RTs and percentiles. It also calculates the subject-subject agreements and some sample trials with average RTs from subjects. 
 
 ## Affinity spread model
 
