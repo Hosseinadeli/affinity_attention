@@ -5,8 +5,6 @@ WORK IN PROGRESS
 <img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/sample_model_outputs/70158.png" width = 750>
 
 
-
-
 <!-- Publications:
 ## Citing our work
 
@@ -29,10 +27,12 @@ You can run the model using the code below.
 python main.py --arch "dinov2_vitb14" --patch_size 14 --which_features "q"  --coco2017_path "./data/coco" --calc_object_centric 1 --calc_spread 1 --aff_tau 0.8
 ```
 
-We provide two standalone colab notebookes: 
+Two output files are saved for each run. First, with the number of steps that the attention took to reach the second for each trial. Second, the True Postiive and False Positive rates of benchmarking how object-centric the representiona is.  
+
+We also provide two standalone colab notebookes: 
 1. [affinity_attention_spread_Transformer_demo](https://colab.research.google.com/drive/1maUewiNxNXvm_OxEj_GMzi4fiHboNXyQ?usp=sharing) shows how affiniyt spread can be used to spread attention in a an object with features from a self-supervised vision transformer. 
 
-2. [affinity_attention_spread_CNN_demo]([https://colab.research.google.com/drive/1maUewiNxNXvm_OxEj_GMzi4fiHboNXyQ?usp=sharing](https://colab.research.google.com/drive/16Ba_7ZPb2ptPdkBvSyzXNN3p2IftpJny?usp=sharing)) shows how affiniyt spread can be used to spread attention in a an object with features from a CNN. 
+2. [affinity_attention_spread_CNN_demo](https://colab.research.google.com/drive/16Ba_7ZPb2ptPdkBvSyzXNN3p2IftpJny?usp=sharing) shows how affiniyt spread can be used to spread attention in a an object with features from a CNN. 
 
 ## Behavioral paradigm and datasets: 
 
@@ -99,9 +99,9 @@ args.dataset_grouping_dir  - this is the folder where the xls files are
  'REACTION_TIME',
  'RT_EVENT_BUTTON_ID']
 
-**preprocess behavioral data.ipynb** : Use this notebook to preprocess the behavioral data. I have already saved the preprocessed files (test_data_grouping_with_all_beh.xls, test_data_grouping_with_mean_beh.xls, df_beh_c.xls) in the datasets -> datasets_grouping folder so you don’t really have to run this file, unless you want to change something. 
+**preprocess behavioral data.ipynb** : Use this notebook to preprocess the behavioral data. The preprocessed files (test_data_grouping_with_all_beh.xls, test_data_grouping_with_mean_beh.xls, df_beh_c.xls) are in the datasets -> datasets_grouping folder so no need to run this file, unless you want to change something. 
 
-**human behavior analyses.ipynb** : This notebook takes in the preprocessed files and analyzes the RTs and percentiles. It also calculates the subject-subject agreements and some sample trials with average RTs from subjects. 
+**human behavior analyses.ipynb** : This notebook takes in the preprocessed files and analyzes the RTs and percentiles. It also calculates the subject-subject agreements and plots some sample trials with average RTs from subjects. 
 
 
 ## Evaluation 
