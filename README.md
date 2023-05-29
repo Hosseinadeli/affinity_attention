@@ -21,6 +21,26 @@ Please cite our  work by using the following BibTeX entry.
 }
 ``` -->
 
+## Affinity spread model
+
+You can run the model using the code below. 
+
+```bash
+python main.py --arch "dinov2_vitb14" --patch_size 14 --which_features "q"  --coco2017_path "./data/coco" --calc_object_centric 1 --calc_spread 1 --aff_tau 0.8
+```
+
+
+
+is very simple to implement and experiment with, and we provide a
+showing how to do spread attention .
+affinity_attention_spread_Transformer_demo
+[standalone Colab Notebook with features from a self-supervised transformer](https://colab.research.google.com/drive/1maUewiNxNXvm_OxEj_GMzi4fiHboNXyQ?usp=sharing)
+
+[standalone Colab Notebook with features from a CNN]
+affinity_attention_spread_CNN_demo
+https://colab.research.google.com/drive/16Ba_7ZPb2ptPdkBvSyzXNN3p2IftpJny?usp=sharing
+
+Affinity_spread_demo_standalone_colab.ipynb : This is a standalone simplified version of the code to run in Colab. 
 
 ## Behavioral paradigm and datasets: 
 
@@ -87,42 +107,20 @@ args.dataset_grouping_dir  - this is the folder where the xls files are
  'REACTION_TIME',
  'RT_EVENT_BUTTON_ID']
 
-*preprocess behavioral data.ipynb* : Use this notebook to preprocess the behavioral data. I have already saved the preprocessed files (test_data_grouping_with_all_beh.xls, test_data_grouping_with_mean_beh.xls, df_beh_c.xls) in the datasets -> datasets_grouping folder so you don’t really have to run this file, unless you want to change something. 
+**preprocess behavioral data.ipynb** : Use this notebook to preprocess the behavioral data. I have already saved the preprocessed files (test_data_grouping_with_all_beh.xls, test_data_grouping_with_mean_beh.xls, df_beh_c.xls) in the datasets -> datasets_grouping folder so you don’t really have to run this file, unless you want to change something. 
 
-*human behavior analyses.ipynb* : This notebook takes in the preprocessed files and analyzes the RTs and percentiles. It also calculates the subject-subject agreements and some sample trials with average RTs from subjects. 
+**human behavior analyses.ipynb** : This notebook takes in the preprocessed files and analyzes the RTs and percentiles. It also calculates the subject-subject agreements and some sample trials with average RTs from subjects. 
 
-## Affinity spread model
-
-You can run the model using the code below. 
-
-```bash
-python main.py --arch "dinov2_vitb14" --patch_size 14 --which_features "q"  --coco2017_path "./data/coco" --calc_object_centric 1 --calc_spread 1 --aff_tau 0.8
-```
-
-
-
-is very simple to implement and experiment with, and we provide a
-showing how to do spread attention .
-affinity_attention_spread_Transformer_demo
-[standalone Colab Notebook with features from a self-supervised transformer](https://colab.research.google.com/drive/1maUewiNxNXvm_OxEj_GMzi4fiHboNXyQ?usp=sharing)
-
-[standalone Colab Notebook with features from a CNN]
-affinity_attention_spread_CNN_demo
-https://colab.research.google.com/drive/16Ba_7ZPb2ptPdkBvSyzXNN3p2IftpJny?usp=sharing
-
-Affinity_spread_demo_standalone_colab.ipynb : This is a standalone simplified version of the code to run in Colab. 
 
 ## Evaluation 
 
 <img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/results/ROC_curve_sorted_sim.png" width = 375><img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/results/model_human_rt_comp_sim.png" width = 300>
 
+**model results analyses.ipynb**: This notebook inputs the output runs and can plot the ROC curves for the object-centric measure. It can also compare each model ouput with the subjecs.
 
-
+The ntoebook also shows hwo to plot the output number of steps for a given run. 
 
 <img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/results/model_steps_hist_q_8_supp.png" width = 475><img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/results/model_steps_q_8_supp.png" width = 250>
-
-
-
 
 
 <!-- ### Repo map
