@@ -1,5 +1,3 @@
-WORK IN PROGRESS
-
 # Affinity Attention
 
 <img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/sample_model_outputs/70158.png" width = 750>
@@ -9,7 +7,7 @@ WORK IN PROGRESS
 ## Citing our work
 
 Please cite our  work by using the following BibTeX entry.
-<!-- 
+
 ``` bibtex
 @Misc{xFormers2022,
   author =       {Benjamin Lefaudeux and Francisco Massa and Diana Liskovich and Wenhan Xiong and Vittorio Caggiano and Sean Naren and Min Xu and Jieru Hu and Marta Tintore and Susan Zhang and Patrick Labatut and Daniel Haziza},
@@ -17,7 +15,7 @@ Please cite our  work by using the following BibTeX entry.
   howpublished = {\url{https://github.com/facebookresearch/xformers}},
   year =         {2022}
 }
-``` --> -->
+``` -->
 
 ## Affinity spread model
 
@@ -40,7 +38,7 @@ We also provide two standalone colab notebookes:
 
 Refer to the paper for the details of the behavrioal paradigm. 
 
-This [google drive folder]() includes all the experimental images:
+This [google drive folder](https://drive.google.com/drive/folders/10uXagNPxcPWh6YZgpCmBP_czUmxxXKWG?usp=sharing) includes all the experimental images:
 **display_images** : This folder contains the images used in the experiment. All selected from COCO 2017 validation set. 
 **display_images_with dots** : This folder contains the images used in the experiment with the four versions of dot placements. 
 
