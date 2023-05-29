@@ -17,6 +17,9 @@ Please cite our  work by using the following BibTeX entry.
 }
 ``` -->
 
+[Hossein Adeli](https://hosseinadeli.github.io/)
+hossein.adelijelodar@gmail.com
+
 ## Affinity spread model
 
 You can run the model using the code below. 
