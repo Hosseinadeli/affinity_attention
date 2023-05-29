@@ -119,7 +119,7 @@ Affinity_spread_demo_standalone_colab.ipynb : This is a standalone simplified ve
 
 
 
-<img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/results/model_steps_hist_q_8_supp.png" width = 375><img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/results/model_steps_q_8_supp.png" width = 200>
+<img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/results/model_steps_hist_q_8_supp.png" width = 425><img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/results/model_steps_q_8_supp.png" width = 250>
 
 
 
