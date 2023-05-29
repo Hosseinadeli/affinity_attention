@@ -30,9 +30,9 @@ python main.py --arch "dinov2_vitb14" --patch_size 14 --which_features "q"  --co
 ```
 
 We provide two standalone colab notebookes: 
-1. [affinity_attention_spread_Transformer_demo] (https://colab.research.google.com/drive/1maUewiNxNXvm_OxEj_GMzi4fiHboNXyQ?usp=sharing) shows how affiniyt spread can be used to spread attention in a an object with features from a self-supervised vision transformer. 
+1. [affinity_attention_spread_Transformer_demo](https://colab.research.google.com/drive/1maUewiNxNXvm_OxEj_GMzi4fiHboNXyQ?usp=sharing) shows how affiniyt spread can be used to spread attention in a an object with features from a self-supervised vision transformer. 
 
-2. [affinity_attention_spread_CNN_demo] ([https://colab.research.google.com/drive/1maUewiNxNXvm_OxEj_GMzi4fiHboNXyQ?usp=sharing](https://colab.research.google.com/drive/16Ba_7ZPb2ptPdkBvSyzXNN3p2IftpJny?usp=sharing)) shows how affiniyt spread can be used to spread attention in a an object with features from a CNN. 
+2. [affinity_attention_spread_CNN_demo]([https://colab.research.google.com/drive/1maUewiNxNXvm_OxEj_GMzi4fiHboNXyQ?usp=sharing](https://colab.research.google.com/drive/16Ba_7ZPb2ptPdkBvSyzXNN3p2IftpJny?usp=sharing)) shows how affiniyt spread can be used to spread attention in a an object with features from a CNN. 
 
 ## Behavioral paradigm and datasets: 
 
