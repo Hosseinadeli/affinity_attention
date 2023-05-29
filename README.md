@@ -46,7 +46,7 @@ This [google drive folder](https://drive.google.com/drive/folders/10uXagNPxcPWh6
 **display_images** : This folder contains the images used in the experiment. All selected from COCO 2017 validation set. 
 **display_images_with dots** : This folder contains the images used in the experiment with the four versions of dot placements. 
 
-**Behavioral dataset**:
+* **Behavioral dataset**:
 datasets -> datasets_grouping -> test_data_groupiong.xls : This excel file contains the info for all the 1020 experimental trials. Each row specified one trial with these info:
 
 ['img_id',
