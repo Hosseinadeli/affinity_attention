@@ -4,10 +4,10 @@ WORK IN PROGRESS
 
 <img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/sample_model_outputs/70158.png" width = 750>
 
-Publications:
 
 
 
+<!-- Publications:
 ## Citing our work
 
 Please cite our  work by using the following BibTeX entry.
@@ -19,7 +19,7 @@ Please cite our  work by using the following BibTeX entry.
   howpublished = {\url{https://github.com/facebookresearch/xformers}},
   year =         {2022}
 }
-``` -->
+``` --> -->
 
 ## Affinity spread model
 
@@ -29,18 +29,10 @@ You can run the model using the code below.
 python main.py --arch "dinov2_vitb14" --patch_size 14 --which_features "q"  --coco2017_path "./data/coco" --calc_object_centric 1 --calc_spread 1 --aff_tau 0.8
 ```
 
+We provide two standalone colab notebookes: 
+1. [affinity_attention_spread_Transformer_demo] (https://colab.research.google.com/drive/1maUewiNxNXvm_OxEj_GMzi4fiHboNXyQ?usp=sharing) shows how affiniyt spread can be used to spread attention in a an object with features from a self-supervised vision transformer. 
 
-
-is very simple to implement and experiment with, and we provide a
-showing how to do spread attention .
-affinity_attention_spread_Transformer_demo
-[standalone Colab Notebook with features from a self-supervised transformer](https://colab.research.google.com/drive/1maUewiNxNXvm_OxEj_GMzi4fiHboNXyQ?usp=sharing)
-
-[standalone Colab Notebook with features from a CNN]
-affinity_attention_spread_CNN_demo
-https://colab.research.google.com/drive/16Ba_7ZPb2ptPdkBvSyzXNN3p2IftpJny?usp=sharing
-
-Affinity_spread_demo_standalone_colab.ipynb : This is a standalone simplified version of the code to run in Colab. 
+2. [affinity_attention_spread_CNN_demo] ([https://colab.research.google.com/drive/1maUewiNxNXvm_OxEj_GMzi4fiHboNXyQ?usp=sharing](https://colab.research.google.com/drive/16Ba_7ZPb2ptPdkBvSyzXNN3p2IftpJny?usp=sharing)) shows how affiniyt spread can be used to spread attention in a an object with features from a CNN. 
 
 ## Behavioral paradigm and datasets: 
 
