@@ -31,6 +31,7 @@ python main.py --arch "dinov2_vitb14" --patch_size 14 --which_features "q"  --co
 
 Two output files are saved for each run. First, with the number of steps that the attention took to reach the second for each trial. Second, the True Postiive and False Positive rates of benchmarking how object-centric the representiona is.  
 
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)]
 We also provide two standalone colab notebookes: 
 1. [affinity_attention_spread_Transformer_demo](https://colab.research.google.com/drive/1maUewiNxNXvm_OxEj_GMzi4fiHboNXyQ?usp=sharing) shows how affiniyt spread can be used to spread attention in a an object with features from a self-supervised vision transformer. 
 
