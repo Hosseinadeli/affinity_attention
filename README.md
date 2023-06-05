@@ -3,20 +3,20 @@
 <img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/sample_model_outputs/70158.png" width = 750>
 
 
-<!-- ### Citing our work
+### Citing our work
+
+Adeli, H., Ahn, S., Kriegeskorte, N., & Zelinsky, G. (2023). Affinity-based Attention in Self-supervised Transformers Predicts Dynamics of Object Grouping in Humans. arXiv preprint arXiv:2306.00294. [arxiv](https://arxiv.org/abs/2306.00294)[pdf](https://arxiv.org/pdf/2306.00294.pdf)
 
 Please cite our work by using the following BibTeX entry.
 
 ``` bibtex
-@misc{adeli2023affinitybased,
-    title={Affinity-based Attention in Self-supervised Transformers Predicts Dynamics of Object Grouping in Humans},
-    author={Hossein Adeli and Seoyoung Ahn and Nikolaus Kriegeskorte and Gregory Zelinsky},
-    year={2023},
-    eprint={2306.00294},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV}
+@article{adeli2023affinity,
+  title={Affinity-based Attention in Self-supervised Transformers Predicts Dynamics of Object Grouping in Humans},
+  author={Adeli, Hossein and Ahn, Seoyoung and Kriegeskorte, Nikolaus and Zelinsky, Gregory},
+  journal={arXiv preprint arXiv:2306.00294},
+  year={2023}
 }
-``` -->
+``` 
 
 [Hossein Adeli](https://hosseinadeli.github.io/)
 hossein.adelijelodar@gmail.com
