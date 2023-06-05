@@ -3,7 +3,7 @@
 <img src="https://raw.githubusercontent.com/Hosseinadeli/affinity_attention/main/figures/sample_model_outputs/70158.png" width = 750>
 
 
-### Citing our work
+<!-- ### Citing our work
 
 Please cite our work by using the following BibTeX entry.
 
@@ -16,7 +16,7 @@ Please cite our work by using the following BibTeX entry.
     archivePrefix={arXiv},
     primaryClass={cs.CV}
 }
-```
+``` -->
 
 [Hossein Adeli](https://hosseinadeli.github.io/)
 hossein.adelijelodar@gmail.com
