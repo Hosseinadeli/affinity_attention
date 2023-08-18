@@ -5,7 +5,7 @@
 
 ### Citing our work
 
-Adeli, H., Ahn, S., Kriegeskorte, N., & Zelinsky, G. (2023). Affinity-based Attention in Self-supervised Transformers Predicts Dynamics of Object Grouping in Humans. arXiv preprint arXiv:2306.00294. [[arxiv](https://arxiv.org/abs/2306.00294)][[pdf](https://arxiv.org/pdf/2306.00294.pdf)]
+Adeli, H., Ahn, S., Kriegeskorte, N., & Zelinsky, G. (2023). Affinity-based Attention in Self-supervised Transformers Predicts Dynamics of Object Grouping in Humans. arXiv preprint arXiv:2306.00294. [[arxiv](https://arxiv.org/abs/2306.00294)][[pdf](https://arxiv.org/pdf/2306.00294.pdf)][[poster](https://drive.google.com/file/d/1E0P7zs2n1u61J6mOC5ix2PTcBSn_yX7o/view?usp=sharing)]
 
 Please cite our work by using the following BibTeX entry.
 
