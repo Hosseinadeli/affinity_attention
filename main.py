@@ -187,7 +187,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--coco2017_path",
         type=str,
-        default='../../data/coco',  
+        default='../../../coco',  
         help="the directory for coco"
     )
     

@@ -132,7 +132,7 @@ class grouping_dataset(Dataset):
             self.dataType='val2017'   
             
         self.transforms = transforms
-        self.img_dir = args.coco2017_path
+        self.img_dir = args.coco2017_path + '/images/'
         
 #         self.annFile='{}/annotations/instances_{}.json'.format(self.img_dir,self.dataType)
         
